@@ -1,0 +1,26 @@
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+<script>
+$(document).ready(function() {
+  $('form').submit(function(event) {
+  alert("submitting");
+  var topic = $("#user").val();
+  alert(topic);
+  $.ajax({
+    url: "/",
+    type: "POST",
+    success: function(dataString) 
+    {  
+         alert(dataString);
+    } ,
+      error: function(error) {
+            alert("some error in fetching the notifications");
+         } 
+   });
+  });
+});
+</script>
+ <form action="/" >  
+      Enter your name:      <input id ="user" type="text" name="userName" placeholder="" />  
+    <br>  
+   <button type="submit">Submit</button>  
+ </form>
