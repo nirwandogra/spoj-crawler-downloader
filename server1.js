@@ -26,7 +26,7 @@ $(function() {
 app.get('/', function(reqq, ress){
 request({
     url: 'http://www.spoj.com', //URL to hit
-    qs: {login_user:"nirwandogra_1",password:"asshole"}, //Query string data
+    qs: {login_user:"xxxxxxxxxxxxx",password:"xxxxxxxxxxxxx"}, //Query string data
     method: 'POST', //Specify the method
     headers: { //We can define headers too
         'Content-Type': 'MyContentType',
